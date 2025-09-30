@@ -20,7 +20,11 @@ const Login = () => {
             <p>Concorda com os Termos de Uso e a Política de Privacidade?</p>
           </div>
           <div className='login-forgot'>
-            <p className='login-toggle'>Já possui uma conta? <span onClick={()=>setCurrState("Login")}>Clique aqui</span></p>
+            {
+              currState === "Cadastre-se"
+              ?<p className='login-toggle'>Já possui uma conta? <span onClick={()=>setCurrState("Login")}>Clique aqui</span></p>
+              :<p className='login-toggle'>Cadastre-se <span onClick={()=>setCurrState("Cadastre-se")}>Clique aqui</span></p>
+            }
           </div>
         </form>
     </div>
