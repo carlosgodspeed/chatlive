@@ -21,7 +21,8 @@ const LeftSideBar = () => {
         <div className='friends'>
           <img src={assets.profile_img} alt='' />
           <div>
-            <p></p>
+            <p>Richard Sanford</p>
+            <span>Hello, How are you</span>
           </div>
         </div>
       </div>
